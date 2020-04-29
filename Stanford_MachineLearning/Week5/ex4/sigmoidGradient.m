@@ -13,10 +13,11 @@ g = zeros(size(z));
 %               each value of z (z can be a matrix, vector or scalar).
 
 
+sigmoid_function = 1.0 ./ (1.0 + exp(-z));
 
 
 
-
+g = sigmoid_function .* (1.0 .- sigmoid_function);
 
 
 
