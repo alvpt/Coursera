@@ -1,0 +1,3 @@
+# Differential equations for engineers.
+
+Este curso cuenta con 7 semanas, en ...
