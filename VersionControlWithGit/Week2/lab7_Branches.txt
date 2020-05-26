@@ -1,0 +1,42 @@
+cd repos 
+
+mkdir projectc && cd projectc
+
+git init
+
+echo "feature1" > fileA.txt
+
+git add fileA.txt
+
+git commit -m "add feature 1"
+
+git branch
+
+git checkout -b featureX
+
+git branch
+
+echo "feature mistake" >> fileA.txt
+
+git add fileA.txt
+
+git commit -m "add feature mistake"
+
+git checkout master
+
+git log --oneline --graph --all
+
+git checkout featureX
+
+sed '2d' fileA.txt && echo "feature bigger mistake" >> fileA.txt
+
+git add fileA.txt
+
+git commit -m  "add feature bigger mistake"
+
+git checkout master
+
+git branch -D featureX
+
+
+

@@ -1,0 +1,7 @@
+mkdir repos && cd repos
+
+mkdir projecta && cd projecta
+
+git init
+
+ls -a

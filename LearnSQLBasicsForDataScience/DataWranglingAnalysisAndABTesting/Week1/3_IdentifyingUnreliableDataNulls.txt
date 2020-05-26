@@ -1,0 +1,34 @@
+--GOAL: Can this events table be trusted?
+--SECRET: There are some entire missing days
+
+SELECT
+  date(event_time) AS date,
+  COUNT(*) AS rows
+FROM
+  dsv1069.events_201701
+GROUP BY
+  date(event_time)
+  
+  
+--GOAL: Can this events table be trusted?
+--When did we start recording events on mobile?
+--SECRET: In this case, mobile logging hasn't been implemented until recently
+
+SELECT
+  date(event_time) AS date,
+  platform,
+  COUNT(*) AS rows
+FROM
+  dsv1069.events_ex2
+GROUP BY
+  date(event_time),
+  platform
+  
+--GOAL: count item views by day
+--You found this table item_views_temp - can you use it?
+--Secret: this table dosn't have dates
+
+SELECT  
+  *
+FROM  
+  dsv1069.item_views_by_category_temp

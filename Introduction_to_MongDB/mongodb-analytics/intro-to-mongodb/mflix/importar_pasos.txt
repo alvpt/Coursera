@@ -1,7 +1,0 @@
-Pasos para importar csv desde linea de comando:
-1. Abrir cmd.
-
-2. Introducir esta linea, cambiando el host (el servidor primario, cuyo nombre se puede ver en la página web
-de Atlas) si es necesario.
-
-mongoimport --host mflix-shard-00-02-rchi3.mongodb.net:27017 --db mflix --type csv --file C:\Users\alvaro\Documents\CS\Coursera\Introduction_to_MongDB\mongodb-analytics\intro-to-mongodb\mflix\movies_initial.csv --authenticationDatabase admin --ssl --username alvaro --password salvador --headerline

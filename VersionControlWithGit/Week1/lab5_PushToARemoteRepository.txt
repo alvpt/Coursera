@@ -1,0 +1,15 @@
+git clone https://github.com/alvpt/projectb.git
+
+cd projectb
+
+ls -a
+
+git remote -v
+
+echo "# projectb's README" > README.md
+
+git add README.md
+
+git commit -m "add README.md"
+
+git push -u origin master

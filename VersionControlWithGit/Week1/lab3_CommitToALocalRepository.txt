@@ -1,0 +1,11 @@
+touch fileA.txt
+
+git status
+
+git add fileA.txt
+
+git status
+
+git commit -m "add fileA.txt"
+
+git log --oneline

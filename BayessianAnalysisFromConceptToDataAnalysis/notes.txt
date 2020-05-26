@@ -1,0 +1,5 @@
+There are 3 different frameworks used to define probability:
+
+Classical: works really well for equally likely outcome, but it's difficult to apply to more complex problems.
+Frequentist: requires to have infinite events so that the frequency of them can be estimated
+Bayessian: in this framework, your probability represents your own perspective.

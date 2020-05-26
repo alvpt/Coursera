@@ -1,0 +1,46 @@
+--1
+
+SELECT 
+  *
+FROM  
+  dsv1069.users
+  
+--2
+SELECT 
+  id,
+  parent_user_id,
+  merged_at
+FROM  
+  dsv1069.users
+ORDER BY
+  parent_user_id ASC
+  
+--3
+SELECT
+  date(created_at) AS day,
+  COUNT(*) AS users
+FROM  
+  dsv1069.users
+WHERE
+  deleted_at IS NULL 
+  AND
+    id <> parent_user_id 
+    OR 
+    parent_user_id = NULL
+GROUP BY
+  date(created_at)
+  
+
+--4
+SELECT
+  new.day,
+  new.new_users_added
+FROM
+  (SELECT
+    date(created_at) AS day,
+    COUNT(*) AS new_users_added
+  FROM  
+    dsv1069.users
+  GROUP BY
+    date(created_at)
+  ) new

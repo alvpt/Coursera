@@ -1,0 +1,55 @@
+cd C:\\users\\alvaro\\Desktop\\FinalProject
+
+
+#A
+echo "-" >> README.md
+git add .
+git commit -m "add README.md"
+
+#B
+git branch develop
+git checkout develop
+echo "" >> fileA.txt
+git add .
+git commit -m "add fileA.txt"
+
+#C
+git branch feature1
+git checkout feature1
+echo "feature 1 wip" > fileA.txt
+git add .
+git commit -m "feature 1 wip"
+
+#D
+echo "feature 1 with 2 bugs" > fileA.txt
+git add .
+git commit -m "add feature 1"
+
+#E
+git checkout develop
+git merge --no-ff feature1 -m "Merge branch 'feature1' into develop"
+git branch -d feature1 
+
+#G
+git checkout develop
+git branch release1
+git checkout release1
+echo "feature 1 with 1 bug" > fileA.txt
+git add .
+git commit -m "fix feature 1 bug X"
+
+#I
+git checkout develop
+git merge --no-ff release1 -m "Merge branch 'release1' into develop"
+
+#K
+git checkout master
+git branch hotfix1
+git checkout hotfix1
+echo "feature 1" > fileA.txt
+git add . 
+git commit -m "fix feature 1 bug Y"
+
+#L
+git checkout master
+git merge --no-ff hotfix1 -m "Merge branch 'hotfix1'"

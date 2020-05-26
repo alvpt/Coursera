@@ -1,0 +1,25 @@
+cd projectb
+
+echo "feature1" > fileA.txt
+
+git add fileA.txt
+
+git commit -m "add feature 1"
+
+git push origin master
+
+git log --oneline
+
+git show 99da275
+
+git show 99da275c738eeeab61f57d783048c1d0bc7d4378
+
+git show HEAD
+
+git show master
+
+git tag
+ 
+git tag -a -m "includes feature 1" v0.1
+
+git push origin v0.1
