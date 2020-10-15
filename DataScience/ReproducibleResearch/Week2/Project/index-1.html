@@ -1,0 +1,150 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>"Reproducible Research - Week 2 Project" </title></head><body>
+<p><code>{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)</code></p>
+<h3 id="introduction">Introduction</h3>
+<p>This is the first assignment in the Coursera course "Reproducible Research", taught by the Johns Hopkins University.</p>
+<p>By using the data and the instructions provided y the assignment's website, the basic principles  behind reproducible research will be put into action.</p>
+<p>In order to complete the tasks, the following packages will be used:</p>
+<p>```{r packages, echo=TRUE, message=FALSE, warning=FALSE}</p>
+<p>library(dplyr)
+library(reshape2)
+library(ggplot2)
+library(gridExtra)
+```</p>
+<h3 id="loading-and-preprocessing-the-data">Loading and preprocessing the data</h3>
+<p>The second step includes setting the working directory to the source file location and loading the data.</p>
+<p>```{r data loading}</p>
+<p>setwd(dirname(rstudioapi::getActiveDocumentContext()$path))</p>
+<p>download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", destfile = "activity.zip", mode="wb")</p>
+<p>unzip("activity.zip")
+data &lt;- read.csv("activity.csv", header = TRUE)</p>
+<p>```</p>
+<p>The questions provided in the assignment will be answered in the following sections.</p>
+<h3 id="what-is-mean-total-number-of-steps-taken-per-day">What is mean total number of steps taken per day?</h3>
+<ol>
+<li>Calculate the total number of steps taken per day.</li>
+</ol>
+<p>```{r number steps}</p>
+<p>databydate &lt;- data %&gt;% select(date, steps) %&gt;% group_by(date) %&gt;% summarize(tsteps= sum(steps)) %&gt;%na.omit()</p>
+<p>print(databydate)</p>
+<p>```</p>
+<ol>
+<li>Make a histogram of the total number of steps taken each day.</li>
+</ol>
+<p>```{r histogran steps}</p>
+<p>png(file="figure\1_totalNumberStepsDaily.png")</p>
+<p>hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)</p>
+<p>dev.off()</p>
+<p>```</p>
+<p><img alt="First" src="1_totalNumberStepsDaily-1.png"/> </p>
+<ol>
+<li>Calculate and report the mean and median of the total number of steps taken per day.</li>
+</ol>
+<p>```{r mean median steps}</p>
+<p>mean(databydate$tsteps)
+median(databydate$tsteps)</p>
+<p>```</p>
+<h3 id="what-is-the-average-daily-activity-pattern">What is the average daily activity pattern?</h3>
+<ol>
+<li>Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)</li>
+</ol>
+<p>```{r time plot}</p>
+<p>data_timePlot &lt;- dcast(data, date ~ interval , value.var = "steps")</p>
+<p>data_timePlot &lt;- lapply(data_timePlot[2:ncol(data_timePlot)], mean, na.rm=TRUE)</p>
+<p>data_timePlot &lt;- data.frame(data_timePlot)</p>
+<p>data_timePlot &lt;- t(data_timePlot)</p>
+<p>data_timePlot &lt;- data.frame(cbind(unique(data$interval), data_timePlot))</p>
+<p>colnames(data_timePlot) &lt;- c("interval", "steps")</p>
+<p>png(file="figure\2_averageSteps5minInterval.png")</p>
+<p>ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()</p>
+<p>dev.off()</p>
+<p>```</p>
+<p><img alt="Second plot" src="2_averageSteps5minInterval-1.png"/> </p>
+<ol>
+<li>Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?</li>
+</ol>
+<p>```{r interval max steps}</p>
+<p>data_timePlot[rev(order(data_timePlot$steps)),][1,1]</p>
+<p>```</p>
+<h2 id="imputing-missing-values">Imputing missing values.</h2>
+<ol>
+<li>Calculate and report the total number of missing values in the dataset. </li>
+</ol>
+<p>```{r missing values}</p>
+<p>sum(is.na(data$steps))</p>
+<p>```</p>
+<ol>
+<li>Devise a strategy for filling in all of the missing values in the dataset:</li>
+</ol>
+<p>```{r flling in NA}</p>
+<p>data_imputedNA &lt;- dcast(data, date ~ interval , value.var = "steps")</p>
+<p>for (column in c(2:ncol(data_imputedNA)))
+{
+  for (row in c(1:nrow(data_imputedNA)))
+  {
+    if( is.na(data_imputedNA[row, column]) ) {</p>
+<pre><code>  data_imputedNA[row, column] = lapply(data_imputedNA[column], mean, na.rm = TRUE)
+
+}
+</code></pre>
+<p>}
+}
+```</p>
+<ol>
+<li>Create a new dataset that is equal to the original dataset but with the missing data filled in. In this case, I have filled in the NA data with the mean for each 5 minute interval.</li>
+</ol>
+<p>```{r filled dataset}</p>
+<p>data_timePlotFilled &lt;- melt(data_imputedNA) </p>
+<p>data_timePlotFilled &lt;- data_timePlotFilled[order(data_timePlotFilled$date),]</p>
+<p>colnames(data_timePlotFilled) &lt;- c("date", "interval", "steps")</p>
+<p>data_timePlotFilled &lt;- cbind(data_timePlotFilled$steps, data_timePlotFilled[1:2])</p>
+<p>colnames(data_timePlotFilled) &lt;- c("steps", "date", "interval")</p>
+<p>```</p>
+<ol>
+<li>Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. </li>
+</ol>
+<p>```{r 4 hist, median, mean}</p>
+<p>databydateFilled &lt;- data_timePlotFilled %&gt;% select(date, steps) %&gt;% group_by(date) %&gt;% summarize(tsteps= sum(steps)) %&gt;%na.omit()</p>
+<p>png(file="figure\3_totalNumberStepsDaily_Filled.png")</p>
+<p>hist(databydateFilled$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)</p>
+<p>dev.off()</p>
+<p>mean(databydateFilled$tsteps)
+median(databydateFilled$tsteps)</p>
+<p>```</p>
+<p><img alt="Third plot" src="3_totalNumberStepsDaily_Filled-1.png"/></p>
+<h2 id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends">Are there differences in activity patterns between weekdays and weekends?</h2>
+<ol>
+<li>Create a new factor variable in the dataset with two levels ��� ���weekday��� and ���weekend��� indicating whether a given date is a weekday or weekend day.</li>
+</ol>
+<p>```{r factor}</p>
+<p>data_timePlotFilled$day &lt;- weekdays( as.Date(data_timePlotFilled$date, format = "%Y-%m-%d") )</p>
+<p>for( row in c(1:nrow(data_timePlotFilled)) ){</p>
+<p>if(data_timePlotFilled$day[row] %in% c("lunes","martes","mi��rcoles","jueves", "viernes")){</p>
+<pre><code>data_timePlotFilled$day[row] = "weekday"
+</code></pre>
+<p>} else {</p>
+<pre><code>data_timePlotFilled$day[row] = "weekend"
+</code></pre>
+<p>}
+}</p>
+<p>data_timePlot_week &lt;- dcast(data_timePlotFilled, day ~ interval , value.var = "steps", fun.aggregate = mean)</p>
+<p>data_timePlot_week &lt;- data.frame( t(data_timePlot_week) )</p>
+<p>data_timePlot_week &lt;- data_timePlot_week[2:nrow(data_timePlot_week),1:2]</p>
+<p>data_timePlot_week &lt;- cbind(unique(data_timePlotFilled$interval), data_timePlot_week)</p>
+<p>colnames(data_timePlot_week) &lt;- c("interval", "weekday", "weekend")</p>
+<p>data_timePlot_week$interval &lt;- unique(data$interval)</p>
+<p>data_timePlot_week$weekday &lt;- as.numeric(data_timePlot_week$weekday)</p>
+<p>data_timePlot_week$weekend &lt;- as.numeric(data_timePlot_week$weekend)</p>
+<p>```</p>
+<ol>
+<li>Make a panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).</li>
+</ol>
+<p>```{r panel}</p>
+<p>p1 &lt;- ggplot(data=data_timePlot_week, aes(x=interval, y=weekend)) + geom_line() + ggtitle("weekend")</p>
+<p>p2 &lt;- ggplot(data=data_timePlot_week, aes(x=interval, y=weekday)) + geom_line() + ggtitle("weekday")</p>
+<p>png(file="figure\4_averageSteps5minInterval_week.png") </p>
+<p>grid.arrange(p1, p2, nrow = 2) </p>
+<p>dev.off()</p>
+<p>```
+<img alt="Fourth plot" src="4_averageSteps5minInterval_week-1.png"/></p>
+</body></html>
