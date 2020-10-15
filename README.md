@@ -113,6 +113,6 @@ In this folder, I have included all the material and the certificates received a
     - [Certificate.](https://www.coursera.org/account/accomplishments/records/GBVJQB2XAQYP)
 
 * Version Control With Git:
-    - [Course program.]()
-    - [Course material.]()
-    - [Certificate.]()
+    - [Course program.](https://www.coursera.org/learn/version-control-with-git)
+    - [Course material.](https://github.com/alvpt/Coursera/tree/master/VersionControlWithGit)
+    - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/M4QR6SMTTPSB)

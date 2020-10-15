@@ -1,5 +1,10 @@
-cd C:\\users\\alvaro\\Desktop\\FinalProject
+cd C:\\Users\\alvar\\Documents\\GitHub
+git log --graph
 
+mkdir VCFP
+cd VCFP
+
+git init
 
 #A
 echo "-" >> README.md
@@ -30,6 +35,13 @@ git checkout develop
 git merge --no-ff feature1 -m "Merge branch 'feature1' into develop"
 git branch -d feature1 
 
+#F
+git branch feature2
+git checkout feature2
+echo "feature 2 wip" >> fileA.txt
+git add .
+git commit -m "feature 2 wip"
+
 #G
 git checkout develop
 git branch release1
@@ -38,9 +50,22 @@ echo "feature 1 with 1 bug" > fileA.txt
 git add .
 git commit -m "fix feature 1 bug X"
 
+#H
+git checkout master
+git merge --no-ff release1 -m "Merge branch 'release1'"
+
 #I
 git checkout develop
 git merge --no-ff release1 -m "Merge branch 'release1' into develop"
+
+#F1
+git checkout feature2
+git rebase develop
+#solving rebase conflict
+echo -e "feature 1 with 1 bug\nfeature 2 wip" > fileA.txt
+git add fileA.txt
+git rebase --continue
+
 
 #K
 git checkout master
@@ -53,3 +78,24 @@ git commit -m "fix feature 1 bug Y"
 #L
 git checkout master
 git merge --no-ff hotfix1 -m "Merge branch 'hotfix1'"
+
+#M
+git checkout develop
+git merge --no-ff hotfix1 -m "Merge branch 'hotfix1'"
+
+#F2
+git checkout feature2
+git rebase develop
+#solving rebase conflict
+echo -e "feature 1" > fileA.txt
+git add fileA.txt
+git rebase --continue
+
+git log --oneline --graph --all
+
+
+
+
+
+
+
