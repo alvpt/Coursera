@@ -10,10 +10,9 @@ In this folder, I have included all the material and the certificates received a
             - [Certificate.](https://www.coursera.org/account/accomplishments/records/XPLBDPLKKZ3S)
 
 
-<!-- * Algorithms On Graphs - University of California San Diego:
+* Algorithms On Graphs - University of California San Diego:
     - [Course program.](https://www.coursera.org/learn/algorithms-on-graphs?)
     - [Course material.](https://github.com/alvpt/Coursera/tree/master/AlgorithmsOnGraphs)
-    - [Certificate.]() -->
 
 
 * Applied Data Science With Python:
@@ -97,10 +96,9 @@ In this folder, I have included all the material and the certificates received a
     - [Course material.]()
     - [Certificate.]() -->
 
-<!-- * Introduction To Probability and Data:
-    - [Course program.]()
-    - [Course material.]()
-    - [Certificate.]() -->
+* Introduction To Probability and Data with R:
+    - [Course program.](https://www.coursera.org/learn/probability-intro)
+    - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/VBM633TKBBPS)
     
 
 
@@ -125,13 +123,16 @@ In this folder, I have included all the material and the certificates received a
 
 
 
-
-            
     
 * Machine Learning - Stanford:
     - [Course program.](https://www.coursera.org/learn/machine-learning)
     - [Course materiak.](https://github.com/alvpt/Coursera/tree/master/Stanford_MachineLearning)
     - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/DB3UETNK8QFS)
+
+
+
+
+    
 
 * Python 3 Programming:
     - [Specialization program.](https://www.coursera.org/specializations/python-3-programming?)
