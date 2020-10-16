@@ -29,6 +29,10 @@ In this folder, I have included all the material and the certificates received a
         -   Applied Machine Learning with Python:
             - [Course program.](https://www.coursera.org/learn/python-machine-learning)
             - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/CVN9X5HN55E5) 
+        -   Applied Text Mining in Python:
+            - [Course program.](https://www.coursera.org/learn/python-text-mining)
+            - [Course material.]()
+            - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/QK6YE22LMW3N) 
 
 
 
@@ -58,7 +62,7 @@ In this folder, I have included all the material and the certificates received a
 
 
     
-* Data Science- Johns Hopkins:
+* Data Science - Johns Hopkins:
     - [Specialization program.](https://www.coursera.org/specializations/jhu-data-science)
     - [Specialization material.](https://github.com/alvpt/Coursera/tree/master/DataScience_JohnsHopkins)
         -   The Data Scientist's Toolbox:
