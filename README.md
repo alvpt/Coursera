@@ -37,8 +37,7 @@ In this folder, I have included all the material and the certificates received a
 * Bayessian Statistics: From Concept To Data Analysis
     - [Course program.](https://www.coursera.org/learn/bayesian-statistics)
     - [Course material.](https://github.com/alvpt/Coursera/tree/master/BayessianAnalysisFromConceptToDataAnalysis)
-    <!-- - [Certificate.]()
-     -->
+    <!-- - [Certificate.]() -->
 
 
 
@@ -55,14 +54,13 @@ In this folder, I have included all the material and the certificates received a
 <!-- * Database Management Essentials:
     - [Course program.]()
     - [Course material.]()
-    - [Certificate.]() --> -->
-
+    - [Certificate.]() --> 
 
 
 
     
 * Data Science- Johns Hopkins:
-    - [Specialization program.]()
+    - [Specialization program.](https://www.coursera.org/specializations/jhu-data-science)
     - [Specialization material.](https://github.com/alvpt/Coursera/tree/master/DataScience_JohnsHopkins)
         -   The Data Scientist's Toolbox:
             - [Course program.](https://www.coursera.org/learn/data-scientists-tools)
@@ -71,7 +69,7 @@ In this folder, I have included all the material and the certificates received a
         -   R Programming:
             - [Course program.](https://www.coursera.org/learn/r-programming)
             - [Course material.](https://github.com/alvpt/Coursera/tree/master/DataScience/RProgramming)
-            - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/9MKD49BZJQK9
+            - [Certificate.](https://www.coursera.org/account/accomplishments/certificate/9MKD49BZJQK9)
         
         -   Getting and Cleaning Data:
             - [Course program.](https://www.coursera.org/learn/data-cleaning)
@@ -161,13 +159,14 @@ In this folder, I have included all the material and the certificates received a
 
 
 
-
-
     
 * The Unix Workbench:
     - [Course program.](https://www.coursera.org/learn/unix)
     - [Course material.](https://github.com/alvpt/Coursera/tree/master/TheUnixWorkbench)
     - [Certificate.](https://www.coursera.org/account/accomplishments/records/GBVJQB2XAQYP)
+
+
+
 
 * Version Control With Git:
     - [Course program.](https://www.coursera.org/learn/version-control-with-git)
