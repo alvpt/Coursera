@@ -4,9 +4,9 @@ In this folder, I have included all the material and the certificates received a
 
 * Accelerated Computer Science Fundamentals - University of Illinois Urbana-Campaing:
     - [Specialization Program.](https://www.coursera.org/specializations/cs-fundamentals?#courses)
-    - [Specialization material.]()
-    - [Certificate.]()
-        -   Object-Oriented Data Structures in C++:
+    - [Specialization material.]() 
+    - [Certificate.]() 
+        - Object-Oriented Data Structures in C++:
             - [Course program.](https://www.coursera.org/learn/cs-fundamentals-1)
             - [Course material.](https://github.com/alvpt/Coursera/tree/master/AcceleratedComputerScienceFundamentals/ObjectOrientedDataStructuresInC%2B%2B)
             - [Certificate.](https://www.coursera.org/account/accomplishments/records/XPLBDPLKKZ3S)
