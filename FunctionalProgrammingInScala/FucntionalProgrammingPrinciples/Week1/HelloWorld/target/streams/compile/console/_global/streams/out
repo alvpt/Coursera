@@ -1,0 +1,41 @@
+[0m[[0m[0mdebug[0m] [0m[0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
+[0m[[0m[0mdebug[0m] [0m[0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.3. Compiling...[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating plain compiler interface for 2.13.3.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > Arguments: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	-nowarn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-d[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_8d180786[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jre1.8.0_261\lib\resources.jar;C:\Program Files\Java\jre1.8.0_261\lib\rt.jar;C:\Program Files\Java\jre1.8.0_261\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_261\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_261\lib\jce.jar;C:\Program Files\Java\jre1.8.0_261\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_261\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_261\classes;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.3\scala-library-2.13.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.3.5\compiler-interface-1.3.5.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\3.7.0\protobuf-java-3.7.0.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.3.0\util-interface-1.3.0.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.13\1.3.5\compiler-bridge_2.13-1.3.5-sources.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.3\scala-compiler-2.13.3.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.3\scala-reflect-2.13.3.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.15.0\jline-3.15.0.jar;C:\Users\alvar\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\API.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Analyzer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\CallbackGlobal.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\ClassName.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Command.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Compat.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\CompilerInterface.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\ConsoleInterface.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\DelegatingReporter.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Dependency.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\ExtractAPI.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\ExtractUsedNames.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\GlobalHelpers.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\InteractiveConsoleFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\InteractiveConsoleHelper.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\InteractiveConsoleInterface.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\InteractiveConsoleResponse.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\JarUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\JavaUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\LocalToNonLocalClass.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\LocateClassFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Log.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\Message.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\alvar\AppData\Local\Temp\sbt_5aa6f485\xsbt\ScaladocInterface.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m      [0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 7.091s.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mStarting scala interpreter...[0m

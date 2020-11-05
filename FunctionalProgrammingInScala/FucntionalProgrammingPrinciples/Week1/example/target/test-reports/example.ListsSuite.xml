@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="DESKTOP-7865TAC" name="example.ListsSuite" tests="6" errors="0" failures="2" skipped="0" time="0.1" timestamp="2020-10-27T12:28:04">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_271\bin"/><property name="java.vm.version" value="25.271-b09"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=";"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="ES"/><property name="user.script" value=""/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value=""/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="C:\Users\alvar\Documents\GitHub\Coursera\FunctionalProgrammingInScala\FucntionalProgrammingPrinciples\Week1\example"/><property name="java.runtime.version" value="1.8.0_271-b09"/><property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/><property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_271\lib\endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="C:\Users\alvar\AppData\Local\Temp\"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="user.variant" value=""/><property name="os.name" value="Windows 10"/><property name="sun.jnu.encoding" value="Cp1252"/><property name="jnidispatch.path" value="C:\Users\alvar\AppData\Local\Temp\jna-92915484\jna7203192759288864724.dll"/><property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\MATLAB\MATLAB Runtime\v95\runtime\win64;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\alvar\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\alvar\AppData\Local\Programs\Python\Python38\;C:\Users\alvar\AppData\Local\Microsoft\WindowsApps;C:\Users\alvar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\bin;;C:\Users\alvar\.dotnet\tools;C:\Users\alvar\AppData\Local\GitHubDesktop\bin;."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.0"/><property name="user.home" value="C:\Users\alvar"/><property name="user.timezone" value="Europe/Paris"/><property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="C:\Program Files (x86)\sbt\\bin\sbt-launch.jar"/><property name="user.name" value="alvar"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="xsbt.boot.Boot"/><property name="java.home" value="C:\Program Files\Java\jre1.8.0_271"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="es"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.windows.WToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_271"/><property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_271\lib\ext;C:\Windows\Sun\Java\lib\ext"/><property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_271\lib\resources.jar;C:\Program Files\Java\jre1.8.0_271\lib\rt.jar;C:\Program Files\Java\jre1.8.0_271\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_271\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_271\lib\jce.jar;C:\Program Files\Java\jre1.8.0_271\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_271\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_271\classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="sun.stderr.encoding" value="cp850"/><property name="file.separator" value="\"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.stdout.encoding" value="cp850"/><property name="sun.desktop" value="windows"/><property name="sun.cpu.isalist" value="amd64"/>
+    </properties>
+                     <testcase classname="example.ListsSuite" name="one plus one is three (0pts)?" time="0.069">
+                                                 <failure message="java.lang.AssertionError: assertion failed" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: assertion failed
+	at scala.Predef$.assert(Predef.scala:267)
+	at example.ListsSuite.one$u0020plus$u0020one$u0020is$u0020three$u0020$u00280pts$u0029$qmark(ListsSuite.scala:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="example.ListsSuite" name="max of a few numbers (10pts)" time="0.031">
+                                                 
+                                               </testcase><testcase classname="example.ListsSuite" name="intNotZero throws an exception if its argument is 0" time="0.0">
+                                                 
+                                               </testcase><testcase classname="example.ListsSuite" name="details why one plus one is not three (0pts)" time="0.0">
+                                                 <failure message="java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at example.ListsSuite.details$u0020why$u0020one$u0020plus$u0020one$u0020is$u0020not$u0020three$u0020$u00280pts$u0029(ListsSuite.scala:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="example.ListsSuite" name="sum of a few numbers (10pts)" time="0.0">
+                                                 
+                                               </testcase><testcase classname="example.ListsSuite" name="one plus one is two (0pts)" time="0.0">
+                                                 
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>
